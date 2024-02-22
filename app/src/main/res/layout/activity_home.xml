@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    tools:context=".HomeActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Connection"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="ESMT"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/dancing_bold"
+                android:layout_marginTop="50dp"
+                android:textSize="36sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:background="@drawable/round_border">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Bienvenue chez ESMT"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/dancing_bold"
+                    android:layout_marginTop="50dp"
+                    android:textSize="36sp" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Inscription"
+                    android:backgroundTint="@color/buttun_color"
+                    android:padding="30dp"
+                    android:textSize="28dp"
+                    android:fontFamily="@font/dm_medium"
+                    android:textAllCaps="true"
+                    android:background="@drawable/buttun"
+                    android:id="@+id/inscrirebt"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Visualisation"
+                    android:backgroundTint="@color/buttun_color"
+                    android:padding="30dp"
+                    android:textSize="28dp"
+                    android:fontFamily="@font/dm_medium"
+                    android:textAllCaps="true"
+                    android:background="@drawable/buttun"
+                    android:id="@+id/visualiserbt"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

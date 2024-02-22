@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    tools:context=".LoginActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Connection"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="ESMT"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/dancing_bold"
+                android:layout_marginTop="50dp"
+                android:textSize="36sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:background="@drawable/round_border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Adresse mail"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/connecttxt"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:drawableStart="@drawable/baseline_alternate_email_24"
+                    android:drawablePadding="8dp"
+                    android:hint="@string/adresse_mail"
+                    android:textColorHint="@color/teal_700"
+                    android:textSize="26sp"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mot de passe"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:layout_margin="20dp"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:drawablePadding="8dp"
+                    android:inputType="textPassword"
+                    android:hint="@string/mdp"
+                    app:passwordToggleEnabled="true"
+                    app:boxCornerRadiusBottomEnd="20dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="20dp"
+                    app:boxCornerRadiusTopStart="8dp"
+
+                    android:textColorHint="@color/teal_700"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Se connecter"
+                    android:backgroundTint="@color/buttun_color"
+                    android:padding="20dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/dm_medium"
+                    android:textAllCaps="true"
+                    android:background="@drawable/buttun"
+                    android:id="@+id/Validerbt"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Vous n'avez pas de compte?"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Inscrivez-vous"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/buttun_color"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

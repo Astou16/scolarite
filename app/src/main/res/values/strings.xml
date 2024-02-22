@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Inscription</string>
+    <string name="adresse_mail">votre.mail@gmail.com</string>
+    <string name="mdp">votre.code.secret</string>
+</resources>
