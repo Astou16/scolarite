@@ -10,7 +10,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
 
@@ -22,7 +22,7 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:padding="10dp"
                     android:src="@drawable/baseline_arrow_back_24"
                     app:tint="@color/white" />
@@ -31,7 +31,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:text="Connection"
+                    android:text="Inscription"
                     android:textColor="@color/white"
                     android:textSize="22sp" />
 
@@ -55,7 +55,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="5dp"
                 android:text="ESMT"
                 android:layout_gravity="center"
                 android:textColor="@color/white"
@@ -76,67 +75,113 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nom et Prenom"
-                    android:padding="5dp"
+                    android:text="Matricule"
+                    android:padding="-5dp"
                     android:layout_marginTop="5dp"
-                    android:textSize="25dp"
+                    android:textSize="20dp"
                     android:textColor="@color/black"/>
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="9dp"
+                    android:drawablePadding="8dp"
+                    android:padding="5dp"
+                    android:textColorHint="@color/teal_700"
+                    android:textSize="16sp"
+                    android:id="@+id/matriculeText"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nom"
+                    android:padding="-5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
                     android:drawableStart="@drawable/baseline_man_24"
                     android:drawablePadding="8dp"
-                    android:hint="Nom et prenom"
+                    android:padding="5dp"
+                    android:hint="Nom"
                     android:textColorHint="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:id="@+id/nomText"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prenom"
+                    android:padding="-5dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:drawableStart="@drawable/baseline_man_24"
+                    android:drawablePadding="8dp"
+                    android:padding="5dp"
+                    android:hint="prenom"
+                    android:textColorHint="@color/teal_700"
+                    android:textSize="16dp"
+                    android:id="@+id/prenomText"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Telephone"
                     android:padding="5dp"
-                    android:layout_marginTop="5dp"
-                    android:textSize="25dp"
+                    android:layout_marginTop="-5dp"
+                    android:textSize="20dp"
                     android:textColor="@color/black"/>
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="9dp"
                     android:drawableStart="@drawable/baseline_call_24"
                     android:drawablePadding="8dp"
+                    android:padding="5dp"
                     android:hint="Numero"
                     android:textColorHint="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16dp"
+                    android:id="@+id/telText"/>
+
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Adresse mail"
-                    android:padding="5dp"
+                    android:padding="-5dp"
                     android:layout_marginTop="5dp"
-                    android:textSize="25dp"
+                    android:textSize="20dp"
                     android:textColor="@color/black"/>
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
+                    android:layout_margin="8dp"
                     android:drawableStart="@drawable/baseline_man_24"
                     android:drawablePadding="8dp"
+                    android:padding="5dp"
                     android:hint="email"
                     android:textColorHint="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16dp"
+                    android:id="@+id/emailText"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Mot de passe"
-                    android:padding="5dp"
+                    android:padding="-5dp"
                     android:layout_marginTop="5dp"
-                    android:textSize="25dp"
+                    android:textSize="20dp"
                     android:textColor="@color/black"/>
 
                 <EditText
@@ -145,9 +190,11 @@
                     android:layout_margin="10dp"
                     android:drawableStart="@drawable/baseline_lock_24"
                     android:drawablePadding="8dp"
+                    android:padding="5dp"
                     android:hint="Password"
                     android:textColorHint="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16dp"
+                    android:id="@+id/passwordText"/>
 
                 <Button
                     android:layout_width="match_parent"

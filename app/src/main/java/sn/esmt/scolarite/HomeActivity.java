@@ -30,8 +30,7 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(HomeActivity.this, ListeEtudiantActivity.class);
                 startActivity(intent);
-                startActivity(intent);
-                startActivity(intent);
+
             }
         });
     }
