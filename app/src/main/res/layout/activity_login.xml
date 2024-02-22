@@ -70,7 +70,7 @@
                     android:textColor="@color/black"/>
 
                 <EditText
-                    android:id="@+id/connecttxt"
+                    android:id="@+id/emailText"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -103,11 +103,7 @@
                     android:drawablePadding="8dp"
                     android:inputType="textPassword"
                     android:hint="@string/mdp"
-                    app:passwordToggleEnabled="true"
-                    app:boxCornerRadiusBottomEnd="20dp"
-                    app:boxCornerRadiusBottomStart="8dp"
-                    app:boxCornerRadiusTopEnd="20dp"
-                    app:boxCornerRadiusTopStart="8dp"
+                    android:id="@+id/password"
 
                     android:textColorHint="@color/teal_700"
                     />
